@@ -10,26 +10,42 @@
       display: grid;
       grid-template-areas: 
       "head head head"
-      "side c c"
+      "side cont cont"
       "footer footer footer";
+
+      padding:10px;
+      grid-gap:10px;
+      background-color: blue;
     }
 
-    header{
+    .grid-container > div{
+      background-color: blue;
+      padding:20px 0px;
+      text-align:center;
+      border:10px solid red;  
+    }
+    .item1{
       grid-area: head;
     }
-    article{ grid-area: c;}
-    footer{grid-area:footer}
-    .side-bar{grid-area: side;}
-    
+    .item2{
+      grid-area: side;
+    }
+    .item3{
+      grid-area: cont;
+    }
+    .item4{
+      grid-area: footer;
+    }
+
 
   </style>
 </head>
 <body>
-  <div class="gird-container">
-    <header>header</header>
-  <article>article</article>
-  <div class="sidebar">sidebar</sidebar>
-  <footer>footer</footer>
+  <div class="grid-container">
+    <div class="item1">Header</div>
+    <div class="item2">Side</div>
+    <div class="item3">content</div>
+    <div class="item4">footer</div>
   </div>
 </body>
 </html>
