@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>grid area</title>
+  <style>
+
+    .grid-container{
+      display: grid;
+      grid-template-areas: 
+      "head head head"
+      "side c c"
+      "footer footer footer";
+    }
+
+    header{
+      grid-area: head;
+    }
+    article{ grid-area: c;}
+    footer{grid-area:footer}
+    .side-bar{grid-area: side;}
+    
+
+  </style>
+</head>
+<body>
+  <div class="gird-container">
+    <header>header</header>
+  <article>article</article>
+  <div class="sidebar">sidebar</sidebar>
+  <footer>footer</footer>
+  </div>
+</body>
+</html>
